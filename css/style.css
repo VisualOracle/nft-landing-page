@@ -22,8 +22,8 @@
 
 body {
   background-color: var(--bg-color);
-  background-image: url("images/ssl_bg.jpg");
-  background-attachment: fixed;
+  background-image: url("https://raw.githubusercontent.com/VisualOracle/nft-landing-page/main/images/background/SSL_background.jpg");
+ background-size: 150vh;
   background-repeat: no-repeat;
   background-position: center top;
   display: flex;
@@ -104,8 +104,9 @@ section {
 .countdown {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-bottom: 8rem;
   height: 100%;
 }
 
@@ -146,7 +147,6 @@ section {
 
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
-  font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
   text-align: center;
