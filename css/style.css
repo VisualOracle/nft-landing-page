@@ -22,7 +22,7 @@
 
 body {
   background-color: var(--bg-color);
-  background-image: url("images/background/ssl_bg.jpg");
+  background-image: url("images/ssl_bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
