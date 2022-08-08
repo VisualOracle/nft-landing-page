@@ -1,12 +1,11 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap");
 
 /* GLOBAL STYLES */
 
 :root {
   --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Montserrat', sans-serif;
   --bg-color: #000000;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff00;
@@ -29,18 +28,31 @@ body {
   display: flex;
   flex-flow: column;
   height: 100vh;
+  width: 100vw;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
 
 .container {
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
-  max-width: 960px;
+  flex-direction: row;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
+.container2 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  background-image: url("");
+  background-repeat: no-repeat;
+}
 /* HEADER */
 
 header {
@@ -66,7 +78,7 @@ header .container {
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
   color: var(--accent-color);
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: bold;
   font-size: 1rem;
   text-transform: capitalize;
@@ -77,21 +89,16 @@ header .container {
   text-decoration: none;
   outline: none;
 }
+
 .btn:hover {
   background-color: #f8ea1b; /* Green */
   color: black;
 }
 
-.wallet-btn {
-  border-radius: 5rem;
-  margin-left: 2rem;
-  border-color: transparent;
-}
-
 .hero-btn {
   border-radius: 1px;
   font-size: 1.2rem;
-  padding: 1rem 2rem;
+  padding: 2.5rem 2rem;
   border: 1px solid #f8ea1b;
 }
 
@@ -104,51 +111,22 @@ section {
 .countdown {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 6rem;
-  height: 100%;
+  margin-bottom: 0rem;
+  margin-top: 19rem;
+  padding: 1rem;
 }
 
 .countdown ul {
   display: flex;
   gap: 2rem
 }
-.countdown .clock-item {
-  list-style: none;
-  width: 70px;
-  height: auto;
-}
-.countdown .clock-item .count-number {
-  background: var(--accent-color);
-  color: var(--font-color);
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  padding: 1rem;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-  border-radius: 4px 4px 0 0;
-}
-.countdown .clock-item .count-text {
-  background: var(--btn-bg-color);
-  font-family: var(--font-secondary);
-  font-size: 1.1rem;
-  color: var(--bg-color);
-  padding: 0.5rem 0.7rem;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-  border-radius: 0 0 4px 4px;
-}
 
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
-  font-family: var(--font-secondary);
-  margin: 2.5rem 0;
+  font-family: var(--font-primary);
+  margin: 0.1rem 2rem;
   font-size: 1rem;
   color: rgb(249, 234, 27);
   text-align: center;
@@ -160,13 +138,51 @@ section {
   text-align: center;
 }
 
-/* OWNER STYLES */
+/* LINE */
 
-.owner-status {
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* STORY */
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5rem;
+
+}
+
+.story h1 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-family: var(--font-primary);
+  margin: 5rem 2rem;
   font-size: 2rem;
   text-align: center;
 }
 
+.story h2 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-family: var(--font-primary);
+  margin: 0.1rem 2rem;
+  font-size: 1rem;
+  color: rgb(249, 234, 27);
+  text-align: center;
+}
+
+.story p1 {
+  max-width: 700px;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-family: var(--font-primary);
+  margin: 2rem 3rem;
+  font-size: 0.8rem;
+  text-align: left;
+}
 /* FOOTER */
 
 .footer {
@@ -174,11 +190,11 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 3rem 3rem;
-  background-color: rgb(0, 0, 0);
+  padding: 1rem 3rem;
+  background-color: #000000;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: 0.6rem;
 }
 
@@ -200,4 +216,6 @@ section {
     font-size: 1rem;
   }
 }
+
+
  
